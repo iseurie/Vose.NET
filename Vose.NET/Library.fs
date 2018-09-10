@@ -16,15 +16,23 @@ let mkGen dist =
     let small, large = grp <| Seq.indexed dist
     let ps = seq {
         for l, g in Seq.zip small large do
-            prob.[l] <- dist.[l] * float sides 
-            alias.[l] <- g
             yield g, dist.[l] + dist.[g] - mu }
+            
     let small, large =
         let ls, gs = grp ps
         Seq.append small ls,
         Seq.append large gs
-    for g in large do prob.[g] <- 1.
-    for l in small do prob.[l] <- 1.
+        
+    for l, g in Seq.zip small large do
+        prob.[l] <- dist.[l] * float sides 
+        alias.[l] <- g
+    
+    let skp = min (Seq.length small) (Seq.length large)
+    let remaining = 
+        if Seq.length large > Seq.length small then large else small
+        |> Seq.skip (min (Seq.length small) (Seq.length large))
+        
+    for i in remaining do prob.[i] <- 1.
     
     let dice () =
         let i = rnd.Next () % sides
