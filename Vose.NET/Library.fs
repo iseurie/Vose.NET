@@ -27,7 +27,6 @@ let mkGen dist =
         prob.[l] <- dist.[l] * float sides 
         alias.[l] <- g
     
-    let skp = min (Seq.length small) (Seq.length large)
     let remaining = 
         if Seq.length large > Seq.length small then large else small
         |> Seq.skip (min (Seq.length small) (Seq.length large))
