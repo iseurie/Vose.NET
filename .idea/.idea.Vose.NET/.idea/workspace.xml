@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5535b83-4916-48a8-8b9e-6969e791ee15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Vose.NET/Deque.fs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vose.NET/Library.fs" beforeDir="false" afterPath="$PROJECT_DIR$/Vose.NET/Library.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vose.NET/Vose.NET.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/Vose.NET/Vose.NET.fsproj" afterDir="false" />
-    </list>
+    <list default="true" id="b5535b83-4916-48a8-8b9e-6969e791ee15" name="Default Changelist" comment="happy words" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="config" value="119" />
-          <entry key="fs" value="14484" />
+          <entry key="fs" value="14810" />
           <entry key="fsproj" value="293" />
           <entry key="txt" value="56" />
           <entry key="xml" value="7" />
@@ -49,7 +45,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Config" value="119" />
-          <entry key="F#" value="14484" />
+          <entry key="F#" value="14810" />
           <entry key="Fsproj" value="293" />
           <entry key="PLAIN_TEXT" value="56" />
           <entry key="XML" value="7" />
@@ -60,26 +56,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vose.NET/Library.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="176">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding>
-                <marker date="1536604478165" expanded="true" signature="11:837" ph=" ..." />
-                <marker date="1536604478165" expanded="true" signature="126:185" ph=" = seq { ..." />
-                <marker date="1536604478165" expanded="true" signature="209:837" ph=" = ..." />
-                <marker date="1536604478165" expanded="true" signature="560:734" ph="for l, g in Seq.zip &lt;| Deque.drain small &lt;| Deque.drain large do ..." />
+                <marker date="1536604736685" expanded="true" signature="11:955" ph=" ..." />
+                <marker date="1536604736685" expanded="true" signature="126:185" ph=" = seq { ..." />
+                <marker date="1536604736685" expanded="true" signature="210:955" ph=" = ..." />
+                <marker date="1536604736685" expanded="true" signature="561:723" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
+                <marker date="1536604736685" expanded="true" signature="835:941" ph=" = ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vose.NET.Test/Program.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="112">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1536604821248" expanded="true" signature="0:586" ph="open System.Diagnostics ..." />
+                <marker date="1536604821248" expanded="true" signature="60:585" ph=" = ..." />
+                <marker date="1536604821248" expanded="true" signature="170:522" ph=" = ..." />
+                <marker date="1536604821248" expanded="true" signature="189:275" ph=" =  ..." />
+                <marker date="1536604821248" expanded="true" signature="307:483" ph=" =  ..." />
+                <marker date="1536604821248" expanded="true" signature="325:481" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
+                <marker date="1536604821248" expanded="true" signature="402:480" ph="for _, bin in bins do  ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,9 +131,9 @@
         <option value="$PROJECT_DIR$/Vose.NET.Test/App.config.xml" />
         <option value="$PROJECT_DIR$/Vose.NET.Test/App.config" />
         <option value="$PROJECT_DIR$/Vose.NET.Test/Vose.NET.Test.fsproj" />
-        <option value="$PROJECT_DIR$/Vose.NET.Test/Program.fs" />
         <option value="$PROJECT_DIR$/Vose.NET/Deque.fs" />
         <option value="$PROJECT_DIR$/Vose.NET/Library.fs" />
+        <option value="$PROJECT_DIR$/Vose.NET.Test/Program.fs" />
       </list>
     </option>
   </component>
@@ -228,7 +234,7 @@
       <updated>1536481493731</updated>
       <workItem from="1536481495707" duration="14671000" />
       <workItem from="1536547903472" duration="2967000" />
-      <workItem from="1536598479779" duration="2759000" />
+      <workItem from="1536598479779" duration="3042000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1536485187854</created>
@@ -283,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20397000" />
+    <option name="totallyTimeSpent" value="20680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,6 +302,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -365,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vose.NET.Test/Program.fs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vose.NET/Deque.fs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -381,13 +381,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vose.NET/Library.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="176">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding>
-            <marker date="1536604478165" expanded="true" signature="11:837" ph=" ..." />
-            <marker date="1536604478165" expanded="true" signature="126:185" ph=" = seq { ..." />
-            <marker date="1536604478165" expanded="true" signature="209:837" ph=" = ..." />
-            <marker date="1536604478165" expanded="true" signature="560:734" ph="for l, g in Seq.zip &lt;| Deque.drain small &lt;| Deque.drain large do ..." />
+            <marker date="1536604736685" expanded="true" signature="11:955" ph=" ..." />
+            <marker date="1536604736685" expanded="true" signature="126:185" ph=" = seq { ..." />
+            <marker date="1536604736685" expanded="true" signature="210:955" ph=" = ..." />
+            <marker date="1536604736685" expanded="true" signature="561:723" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
+            <marker date="1536604736685" expanded="true" signature="835:941" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vose.NET.Test/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1536604821248" expanded="true" signature="0:586" ph="open System.Diagnostics ..." />
+            <marker date="1536604821248" expanded="true" signature="60:585" ph=" = ..." />
+            <marker date="1536604821248" expanded="true" signature="170:522" ph=" = ..." />
+            <marker date="1536604821248" expanded="true" signature="189:275" ph=" =  ..." />
+            <marker date="1536604821248" expanded="true" signature="307:483" ph=" =  ..." />
+            <marker date="1536604821248" expanded="true" signature="325:481" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
+            <marker date="1536604821248" expanded="true" signature="402:480" ph="for _, bin in bins do  ..." />
           </folding>
         </state>
       </provider>

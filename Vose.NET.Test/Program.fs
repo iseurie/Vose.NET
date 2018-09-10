@@ -8,6 +8,7 @@ let main _ =
     let testDist dist n =
         let bins = 
             Seq.initInfinite (ignore>>(mkDice dist))
+            |> Seq.take n
             |> Seq.groupBy id
             
         let result = 
@@ -15,6 +16,6 @@ let main _ =
                 for _, bin in bins do 
                     yield n / (float <| Seq.length bin) |]
         printfn "%A => %A" dist result
-    testDist skewed 100_000
-    testDist uniform 100_000
+    testDist skewed 100
+    testDist uniform 100
     0
