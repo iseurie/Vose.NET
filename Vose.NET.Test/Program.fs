@@ -8,7 +8,7 @@ let main _ =
     let timer = Stopwatch.StartNew ()
     let testDist dist n =
         let bins = 
-            Seq.initInfinite (ignore>>(mkGen dist))
+            Seq.initInfinite (ignore>>(mkDice dist))
             |> Seq.groupBy id
             
         let result = 
