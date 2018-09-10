@@ -1,42 +1,28 @@
 module Vose
 
-let mutable rnd = new System.Random ()
+open System.Collections.Generic
 
+let mutable rnd = new System.Random ()
+        
+let private drain (d : Deque<_>) = seq {
+        while d.IsFull do yield d.RemoveFront () }
+        
 let mkGen dist =
     let sides = Array.length dist
     let mu = 1. / float sides
-    let grp s =
-        let strata = Seq.groupBy (snd >> (<) mu) s
-        let unwrap = Option.map (snd>>Seq.map fst) >> Option.defaultValue Seq.empty
-        let small = strata |> Seq.tryFind fst |> unwrap
-        let large = strata |> Seq.tryFind (fst>>not) |> unwrap
-        small, large
+    let small, large = new Deque<_>(), new Deque<_>()
+    let smallp p = p < mu
+    let push (i, p) = (if smallp p then small.AddBack else large.AddBack) i
+    for p in Array.indexed dist do push p
     let prob = Array.zeroCreate sides
     let alias = Array.zeroCreate sides
-    let small, large = grp <| Seq.indexed dist
-    let ps = seq {
-        for l, g in Seq.zip small large do
-            yield g, dist.[l] + dist.[g] - mu }
-            
-    let small, large =
-        let ls, gs = grp ps
-        Seq.append small ls,
-        Seq.append large gs
-        
-    for l, g in Seq.zip small large do
+    
+    for l, g in Seq.zip <| Deque.drain small <| Deque.drain large do
         prob.[l] <- dist.[l] * float sides 
         alias.[l] <- g
+        push (g, dist.[l] + dist.[g] - mu)
     
-    let remaining = 
-        if Seq.length large > Seq.length small then large else small
-        |> Seq.skip (min (Seq.length small) (Seq.length large))
-        
-    for i in remaining do prob.[i] <- 1.
+    for l in Deque.drain large do prob.[l] <- 1.
+    for g in Deque.drain small do prob.[g] <- 1.
     
-    let dice () =
-        let i = rnd.Next () % sides
-        if prob.[i] * rnd.NextDouble () > 0.5 then i else alias.[i]
-  
-    dice
-
 
