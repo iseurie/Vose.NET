@@ -4,17 +4,17 @@ open System.Collections.Generic
 
 let mutable rnd = new System.Random ()
         
-let private pop (d : Deque<_>) = d.RemoveBack ()
+let private pop (d : Deque<_>) = d.RemoveFront ()
 
 let private drain (d : Deque<_>) =
     seq { while not d.IsEmpty do yield pop d } 
         
 let mkDice dist =
     let sides = Array.length dist
-    let μ = 1. / float sides
     let n = float sides
+    let μ = 1. / n
     let small, large = new Deque<_>(), new Deque<_>()
-    let push (i, p) = (if p < μ then small.Add else large.Add ) i
+    let push (i, p) = (if p < μ then small.Add else large.Add) i
     do Array.indexed dist |> Array.iter push
     
     let prob = Array.zeroCreate sides
@@ -25,7 +25,6 @@ let mkDice dist =
         alias.[l] <- g
         prob.[g] <- prob.[g] + prob.[l] - μ
         push (g, dist.[l] + dist.[g] - μ)
-    
     
     for l in drain large do prob.[l] <- 1.
     for g in drain small do prob.[g] <- 1.
