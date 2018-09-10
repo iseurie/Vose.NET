@@ -1,5 +1,4 @@
 module Vose
-open FSharpPlus
 
 let mutable rnd = new System.Random ()
 

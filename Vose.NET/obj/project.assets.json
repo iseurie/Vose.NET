@@ -55,18 +55,6 @@
           }
         }
       },
-      "FSharpPlus/1.1.0-CI00230": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "4.3.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/FSharpPlus.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/FSharpPlus.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -151,20 +139,6 @@
         "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
         "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
-      ]
-    },
-    "FSharpPlus/1.1.0-CI00230": {
-      "sha512": "QQPjXyMxVxQrgUGT61/wtYtV4UHC3flKTTZeAGD4XKd8hsJXvgIN8wf673m02eXlM9/1tV4lugM4aAXScKZzBw==",
-      "type": "package",
-      "path": "fsharpplus/1.1.0-ci00230",
-      "files": [
-        ".signature.p7s",
-        "fsharpplus.1.1.0-ci00230.nupkg.sha512",
-        "fsharpplus.nuspec",
-        "lib/net45/FSharpPlus.dll",
-        "lib/net45/FSharpPlus.xml",
-        "lib/netstandard2.0/FSharpPlus.dll",
-        "lib/netstandard2.0/FSharpPlus.xml"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -311,7 +285,6 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "FSharp.Core >= 4.3.4",
-      "FSharpPlus >= 1.1.0-CI00230",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -354,10 +327,6 @@
           "FSharp.Core": {
             "target": "Package",
             "version": "[4.3.4, )"
-          },
-          "FSharpPlus": {
-            "target": "Package",
-            "version": "[1.1.0-CI00230, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
