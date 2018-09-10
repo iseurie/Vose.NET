@@ -39,7 +39,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="config" value="119" />
-          <entry key="fs" value="16810" />
+          <entry key="fs" value="17930" />
           <entry key="fsproj" value="293" />
           <entry key="txt" value="91" />
           <entry key="xml" value="7" />
@@ -48,7 +48,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Config" value="119" />
-          <entry key="F#" value="16810" />
+          <entry key="F#" value="17930" />
           <entry key="Fsproj" value="293" />
           <entry key="PLAIN_TEXT" value="91" />
           <entry key="XML" value="7" />
@@ -62,14 +62,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vose.NET/Library.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="217">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
-                <marker date="1536607415273" expanded="true" signature="11:1051" ph=" ..." />
-                <marker date="1536607415273" expanded="true" signature="176:225" ph=" = ..." />
-                <marker date="1536607415273" expanded="true" signature="251:1051" ph=" = ..." />
-                <marker date="1536607415273" expanded="true" signature="598:792" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
-                <marker date="1536607415273" expanded="true" signature="931:1037" ph=" = ..." />
+                <marker date="1536608494612" expanded="true" signature="11:1014" ph=" ..." />
+                <marker date="1536608494612" expanded="true" signature="177:226" ph=" = ..." />
+                <marker date="1536608494612" expanded="true" signature="252:1014" ph=" = ..." />
+                <marker date="1536608494612" expanded="true" signature="588:782" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
+                <marker date="1536608494612" expanded="true" signature="894:1000" ph=" = ..." />
               </folding>
             </state>
           </provider>
@@ -78,16 +78,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vose.NET.Test/Program.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="256">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding>
-                <marker date="1536605100888" expanded="true" signature="0:680" ph="open System.Diagnostics ..." />
-                <marker date="1536605100888" expanded="true" signature="60:679" ph=" = ..." />
-                <marker date="1536605100888" expanded="true" signature="170:548" ph=" = ..." />
-                <marker date="1536605100888" expanded="true" signature="189:301" ph=" =  ..." />
-                <marker date="1536605100888" expanded="true" signature="333:509" ph=" =  ..." />
-                <marker date="1536605100888" expanded="true" signature="351:507" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
-                <marker date="1536605100888" expanded="true" signature="428:506" ph="for _, bin in bins do  ..." />
+                <marker date="1536608542271" expanded="true" signature="0:638" ph="open System.Diagnostics ..." />
+                <marker date="1536608542271" expanded="true" signature="60:637" ph=" = ..." />
+                <marker date="1536608542271" expanded="true" signature="170:563" ph=" = ..." />
+                <marker date="1536608542271" expanded="true" signature="189:301" ph=" =  ..." />
+                <marker date="1536608542271" expanded="true" signature="333:524" ph=" =  ..." />
+                <marker date="1536608542271" expanded="true" signature="351:522" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
+                <marker date="1536608542271" expanded="true" signature="428:521" ph="for _, bin in Seq.sortBy fst bins do  ..." />
               </folding>
             </state>
           </provider>
@@ -237,7 +237,7 @@
       <updated>1536481493731</updated>
       <workItem from="1536481495707" duration="14671000" />
       <workItem from="1536547903472" duration="2967000" />
-      <workItem from="1536598479779" duration="5635000" />
+      <workItem from="1536598479779" duration="6834000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1536485187854</created>
@@ -299,7 +299,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23273000" />
+    <option name="totallyTimeSpent" value="24472000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,12 +314,12 @@
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,10 +369,10 @@
           <line>20</line>
           <properties documentPath="$PROJECT_DIR$/Vose.NET/Library.fs" initialLine="18">
             <startOffsets>
-              <option value="553" />
+              <option value="543" />
             </startOffsets>
             <endOffsets>
-              <option value="587" />
+              <option value="577" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
@@ -405,30 +405,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vose.NET.Test/Program.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="256">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
           <folding>
-            <marker date="1536605100888" expanded="true" signature="0:680" ph="open System.Diagnostics ..." />
-            <marker date="1536605100888" expanded="true" signature="60:679" ph=" = ..." />
-            <marker date="1536605100888" expanded="true" signature="170:548" ph=" = ..." />
-            <marker date="1536605100888" expanded="true" signature="189:301" ph=" =  ..." />
-            <marker date="1536605100888" expanded="true" signature="333:509" ph=" =  ..." />
-            <marker date="1536605100888" expanded="true" signature="351:507" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
-            <marker date="1536605100888" expanded="true" signature="428:506" ph="for _, bin in bins do  ..." />
+            <marker date="1536608542271" expanded="true" signature="0:638" ph="open System.Diagnostics ..." />
+            <marker date="1536608542271" expanded="true" signature="60:637" ph=" = ..." />
+            <marker date="1536608542271" expanded="true" signature="170:563" ph=" = ..." />
+            <marker date="1536608542271" expanded="true" signature="189:301" ph=" =  ..." />
+            <marker date="1536608542271" expanded="true" signature="333:524" ph=" =  ..." />
+            <marker date="1536608542271" expanded="true" signature="351:522" ph="  let n = Seq.map (snd&gt;&gt;Seq.length) bins |&gt; Seq.sum |&gt; float ..." />
+            <marker date="1536608542271" expanded="true" signature="428:521" ph="for _, bin in Seq.sortBy fst bins do  ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vose.NET/Library.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="217">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
-            <marker date="1536607415273" expanded="true" signature="11:1051" ph=" ..." />
-            <marker date="1536607415273" expanded="true" signature="176:225" ph=" = ..." />
-            <marker date="1536607415273" expanded="true" signature="251:1051" ph=" = ..." />
-            <marker date="1536607415273" expanded="true" signature="598:792" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
-            <marker date="1536607415273" expanded="true" signature="931:1037" ph=" = ..." />
+            <marker date="1536608494612" expanded="true" signature="11:1014" ph=" ..." />
+            <marker date="1536608494612" expanded="true" signature="177:226" ph=" = ..." />
+            <marker date="1536608494612" expanded="true" signature="252:1014" ph=" = ..." />
+            <marker date="1536608494612" expanded="true" signature="588:782" ph="for l, g in Seq.zip &lt;| drain small &lt;| drain large do ..." />
+            <marker date="1536608494612" expanded="true" signature="894:1000" ph=" = ..." />
           </folding>
         </state>
       </provider>
