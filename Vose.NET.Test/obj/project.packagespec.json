@@ -1,0 +1,46 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Vose.NET\\Vose.NET.Test\\Vose.NET.Test.fsproj",
+    "projectName": "Vose.NET.Test",
+    "projectPath": "C:\\Users\\hp\\source\\repos\\Vose.NET\\Vose.NET.Test\\Vose.NET.Test.fsproj",
+    "outputPath": "C:\\Users\\hp\\source\\repos\\Vose.NET\\Vose.NET.Test\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {
+          "C:\\Users\\hp\\source\\repos\\Vose.NET\\Vose.NET\\Vose.NET.fsproj": {
+            "projectPath": "C:\\Users\\hp\\source\\repos\\Vose.NET\\Vose.NET\\Vose.NET.fsproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "FSharp.Core": {
+          "target": "Package",
+          "version": "[4.3.4, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

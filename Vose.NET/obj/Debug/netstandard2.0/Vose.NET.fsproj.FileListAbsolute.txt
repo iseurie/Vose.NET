@@ -1,0 +1,6 @@
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\bin\Debug\netstandard2.0\Vose.NET.deps.json
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\bin\Debug\netstandard2.0\Vose.NET.dll
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\bin\Debug\netstandard2.0\Vose.NET.pdb
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\obj\Debug\netstandard2.0\Vose.NET.fsprojAssemblyReference.cache
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\obj\Debug\netstandard2.0\Vose.NET.dll
+C:\Users\hp\source\repos\Vose.NET\Vose.NET\obj\Debug\netstandard2.0\Vose.NET.pdb
