@@ -27,10 +27,10 @@ let mkGen dist =
     for g in large do prob.[g] <- 1.
     for l in small do prob.[l] <- 1.
     
-    let gen () =
+    let dice () =
         let i = rnd.Next () % sides
         if prob.[i] * rnd.NextDouble () > 0.5 then i else alias.[i]
   
-    gen
+    dice
 
 
