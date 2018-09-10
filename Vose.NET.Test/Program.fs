@@ -5,7 +5,6 @@ open Vose
 let main _ =
     let skewed = [| 0.2; 0.3; 0.5 |]
     let uniform = [| 0.25; 0.25; 0.25; 0.25 |]
-    let timer = Stopwatch.StartNew ()
     let testDist dist n =
         let bins = 
             Seq.initInfinite (ignore>>(mkDice dist))
