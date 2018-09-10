@@ -16,6 +16,9 @@ let main _ =
                 for _, bin in bins do 
                     yield n / (float <| Seq.length bin) |]
         printfn "%A => %A" dist result
-    testDist skewed 100
-    testDist uniform 100
+    mkDice skewed
+    |> (>>) ignore
+    |> Seq.initInfinite
+    |> Seq.take 1000 |> Seq.averageBy float
+    |> printfn "%A"
     0
